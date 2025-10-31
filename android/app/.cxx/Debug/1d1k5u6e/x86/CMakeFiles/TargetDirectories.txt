@@ -1,0 +1,2 @@
+C:/Users/shahi/Downloads/saoirse_new/saoirse/android/app/.cxx/Debug/1d1k5u6e/x86/CMakeFiles/edit_cache.dir
+C:/Users/shahi/Downloads/saoirse_new/saoirse/android/app/.cxx/Debug/1d1k5u6e/x86/CMakeFiles/rebuild_cache.dir

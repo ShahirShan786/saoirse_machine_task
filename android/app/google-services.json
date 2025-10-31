@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "637449545179",
+    "project_id": "saoirse-application",
+    "storage_bucket": "saoirse-application.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637449545179:android:476f3986b5cdd4c24933fe",
+        "android_client_info": {
+          "package_name": "com.saoirse.epi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637449545179-6n2sr75iob8jkq6qvkfbno7uca0o0ntm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saoirse.epi",
+            "certificate_hash": "3314fc0e949f639dabbc086c1e4dd77a917e1c79"
+          }
+        },
+        {
+          "client_id": "637449545179-o08ms7lmsku4r5ntu2lj0ukt10m7nj79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvqQBdTzyaaT8Gj4Rn27K6T8H54XDyGGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637449545179-o08ms7lmsku4r5ntu2lj0ukt10m7nj79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

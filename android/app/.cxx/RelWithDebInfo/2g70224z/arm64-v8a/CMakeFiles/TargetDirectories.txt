@@ -1,0 +1,2 @@
+C:/Users/LENOVO/StudioProjects/kannur/android/app/.cxx/RelWithDebInfo/2g70224z/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/LENOVO/StudioProjects/kannur/android/app/.cxx/RelWithDebInfo/2g70224z/arm64-v8a/CMakeFiles/rebuild_cache.dir
