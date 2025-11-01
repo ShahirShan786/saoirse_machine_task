@@ -1,11 +1,9 @@
 import 'dart:convert';
 
-import 'package:epi/services/auth_services.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../api_service/auth_service.dart';
 
 class PromotionalHomePage extends StatefulWidget {
   const PromotionalHomePage({super.key});

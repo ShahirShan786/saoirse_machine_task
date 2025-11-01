@@ -6,6 +6,7 @@ import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:epi/Bottom_NavigationPage.dart';
+import 'package:epi/WISHLIST/custom_toast.dart';
 import 'package:epi/api_service/auth_service.dart';
 import 'package:epi/data/user_model/user_data.dart';
 import 'package:epi/locator/app_db.dart';
@@ -73,9 +74,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   // Inside your State class
   Future<void> _handleSignUp(BuildContext context) async {
     if (_formKey.currentState!.validate()) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Creating your account...')),
-      );
+      showInfoToast(context , 'Creating your account...');
 
       final authService = AuthServices();
 
@@ -100,15 +99,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
         _clearSignUpFields();
 
         if (context.mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Account created successfully!')),
-          );
+          showSuccessToast(context , 'Account created successfully!');
         }
 
-        // ✅ Clear all text fields and reset image
+       
         _clearSignUpFields();
 
-        // ✅ Navigate to Dashboard
+       
         if (context.mounted) {
           Navigator.pushReplacement(
             context,
@@ -118,9 +115,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         }
       } else {
         if (context.mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text(result ?? 'Signup failed')),
-          );
+          showErrorToast(context, result ?? 'Signup failed');
         }
       }
     }
@@ -133,7 +128,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
     _passwordController.clear();
     _referralCodeController.clear();
     setState(() {
-      _profileImage = null; // if profileImage is a File or XFile
+      _profileImage = null; 
     });
   }
 
@@ -236,7 +231,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         });
       }
     } catch (e) {
-      print('Error picking image from gallery: $e');
+      log('Error picking image from gallery: $e');
     }
   }
 
@@ -709,9 +704,11 @@ Widget _buildOption({
     child: Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
+        // ignore: deprecated_member_use
         color: const Color(0xFF0A1F44).withOpacity(0.05),
         borderRadius: BorderRadius.circular(15),
         border: Border.all(
+          // ignore: deprecated_member_use
           color: const Color(0xFF0A1F44).withOpacity(0.1),
           width: 1,
         ),

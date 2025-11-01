@@ -1,4 +1,4 @@
-// ✅ Success Toast
+//Success Toast
 import 'package:flutter/material.dart';
 
 void showSuccessToast(BuildContext context, String message) {
@@ -91,7 +91,7 @@ void showErrorToast(BuildContext context, String message) {
   );
 }
 
-// ℹ️ Info Toast (Bonus)
+// Info Toast
 void showInfoToast(BuildContext context, String message) {
   ScaffoldMessenger.of(context).showSnackBar(
     SnackBar(

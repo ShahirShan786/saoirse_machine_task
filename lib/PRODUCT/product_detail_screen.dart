@@ -89,13 +89,13 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
         final data =
             ProductByIdResponseModel.fromJson(json.decode(response.body));
         debugPrint("BODY RUNTIME TYPE ${data.runtimeType}");
-        debugPrint("Product ${data}");
+        debugPrint("Product $data");
         setState(() {
           productByIdResponseModel = data;
 
           isLoading = false;
         });
-        debugPrint("NOW PRODUCT IS ${productByIdResponseModel}");
+        debugPrint("NOW PRODUCT IS $productByIdResponseModel");
       } else {
         debugPrint("IN DETAIL PAGE STATUS CODE ${response.statusCode}");
         // showError("Status code: ${response.statusCode}");

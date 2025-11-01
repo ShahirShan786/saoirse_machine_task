@@ -5,7 +5,6 @@ import 'dart:io';
 import 'package:epi/api_service/auth_service.dart';
 import 'package:epi/common_widget/gradiant_border_container.dart';
 import 'package:epi/data/model/product_response_model.dart';
-import 'package:epi/services/auth_services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;

@@ -2,7 +2,6 @@ import 'package:epi/api_service/auth_service.dart';
 import 'package:epi/data/model/profile_view_model.dart';
 import 'package:epi/locator/app_db.dart';
 import 'package:epi/login/login_screen.dart';
-import 'package:epi/services/auth_services.dart';
 import 'package:epi/sub_profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
